@@ -25,7 +25,7 @@ func TestFatal(t *testing.T) {
 	for i:= 0; i < len(str); i++ {
 		for j := 0; i < len(ascii.Ascii); j++ {
 			if str[i] != ascii.Ascii[j] {
-				t.Fatal("FATAL ERROR")
+				t.Error("expected", str[i], "got", ascii.Ascii[j])
 			}
 		}
 	}
