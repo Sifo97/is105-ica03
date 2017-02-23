@@ -3,9 +3,8 @@
 // 			go run server.go
 // Du kan ha tilgang til server fra nettleser med
 // 			http://localhost:3000
-//
-package main
 
+package main
 import (
 	"net/http"
 )
