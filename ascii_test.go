@@ -2,7 +2,7 @@ package main
 
 //import "testing"
 //import "strings"
-//import "./ascii"
+import "./ascii"
 import "testing"
 import "fmt"
 func isASCII(s string) bool {
@@ -15,7 +15,7 @@ func isASCII(s string) bool {
 }
 
 func TestGreetingASCII(t *testing.T) {
-	if isASCII("a") == false {
+	if isASCII(ascii.GreetingASCII()) == false {
 	fmt.Println("Success: Inneholder bare ASCII chars")
 	}else{
 	t.Error("Feil: Inneholder normal chars ")
