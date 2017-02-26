@@ -1,6 +1,7 @@
 package main
 
 //import "testing"
+import "strings"
 import "./ascii"
 import "testing"
 //var ascii_tests_string = []struct {
@@ -18,6 +19,16 @@ import "testing"
 //		}
 //	}
 //}
+
+
+func TestGreetingsASCII(t *testing.T) {
+    for_, v := range ascii_tests_string {
+    if !strings.Contains(Ascii, strings.ToLower(string(v))) {
+	return false
+	}
+     }
+  return true
+}
 
 
 func TestFatal(t *testing.T) {
