@@ -1,8 +1,15 @@
 package iso
 
-func IterateOverASCIIStringLiteral(sl string) {
-	// Kode for Oppgave 2a
+import "fmt"
+
+func IterateOverExtendedASCIIStringLiteral(sl string) {	
+	for i := 0; i < len(sl); i++ {
+	c := []byte {sl[i]}
+	fmt.Printf("%X %s %b\n", c, c, sl[i])
+	}
 }
 
 // Kode for Oppgave 2b
-func GreetingExtendedASCII() {}
+func GreetingExtendedASCII() {
+	//greeting := "\x53\x67"
+}

@@ -1,20 +1,23 @@
 package main
 
-//import "fmt"
-//import "./ascii"
+import ( 
+	"fmt"
+	"./ascii"
+	"./iso"
+ )
 
-//func main() {
-//	ascii.IterateOverASCIIStringLiteral(ascii.Ascii)
-	//s := ascii.GreetingASCII()
-	//fmt.Println(s)
+func main() {
+	ascii.IterateOverASCIIStringLiteral(ascii.Ascii)
+	s := ascii.GreetingASCII()
+	fmt.Println(s)
 	
-	//a := "hello"
-	//for i := 0; i < len(a); i++ {
-	//	fmt.Printf("%b\n", a[i])
-	//}
+	var ExtAscii []byte
 	
-	//a := "Hello"
-	//fmt.Printf("%+q", a)
-	//fmt.Println("Hello")
-	//fmt.Print("Hello")
-//}
+	for i := 0x80; i <= 0xFF; i++ {
+	ExtAscii = append (ExtAscii, byte(i))
+	}
+	var ExtAsciiString string = string(ExtAscii)
+	
+	iso.IterateOverExtendedASCIIStringLiteral(ExtAsciiString)
+	
+}
