@@ -7,9 +7,21 @@ func IterateOverExtendedASCIIStringLiteral(sl string) {
 	c := []byte {sl[i]}
 	fmt.Printf("%X %s %b\n", c, c, sl[i])
 	}
+	fmt.Println()
 }
 
 // Kode for Oppgave 2b
-func GreetingExtendedASCII() {
-	//greeting := "\x53\x67"
+const Greeting = "\x22\x53\x61\x6c\x75\x74\x2c\x20\xE7\x61\x20\x76\x61\x20\xB0\x96\x29\x20\x80\x35\x30\x22"
+//"Salut, ça va °-) €50" i heksadesimale tall 
+
+//GreetingByte []byte = {x22,x53,x61,x6c,x75,x74,x2c,x20,xE7,x61,x20,x76,x61,x20,xB0,x96,x29,x20,x80,x35,x30,x22}
+//	srt := range GreetingByte
+	
+
+func GreetingExtendedASCII() string{
+
+	for i := 0; i < len(Greeting); i++ {
+		fmt.Printf("%c", Greeting[i])
+	}
+	return Greeting
 }

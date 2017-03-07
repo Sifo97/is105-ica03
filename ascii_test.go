@@ -19,7 +19,7 @@ func TestGreetingASCII(t *testing.T) {
 	if isASCII(ascii.GreetingASCII()) == true {
 	fmt.Println("Success: Inneholder bare ASCII chars")
 	}else{
-	t.Error("Feil: Inneholder normal chars ")
+		t.Error("Feil: Inneholder normal chars ")
 	}
-	}
+}
 	
