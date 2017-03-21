@@ -4,13 +4,22 @@ import (
 	"fmt"
 	"./ascii"
 	"./iso"
+	//"./fileutils"
+	"./unicode"
+	//"strconv"
+	//"encoding/hex"
+	//"strings"
+	//"os"
  )
 
 func main() {
+
+	//laang := os.Args[1:]
+
 	ascii.IterateOverASCIIStringLiteral(ascii.Ascii)
 	
-	s := ascii.GreetingASCII()
-	fmt.Println(s)
+	d := ascii.GreetingASCII()
+	fmt.Println(d)
 	
 	var ExtAscii []byte
 	
@@ -24,5 +33,23 @@ func main() {
 	
 	a := iso.GreetingExtendedASCII()
 	fmt.Println(a)
+	
+	//byteslice := fileutils.FileToByteslice("treasure/treasure.txt")
+	
+	//for i := 0, i < len(byteslice); i++ {
+	//	fmt.Println(byteslice[i])
+	//}
+	//fmt.Printf("%s", byteslice)
+	//s := fmt.Sprintf("%s", byteslice)
+	//s = strings.TrimPrefix(s, "\\x")
+	//fmt.Println(s)
+	//fmt.Printf("%c", 120)
+	
+	//dest := make([]byte, len(byteslice))
+	//hex.Decode(dest,(byteslice))
+	//fmt.Println(dest)
+	
+	
+	unicode.Translate(unicode.Norsk, "jp")
 	
 }
