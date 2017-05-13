@@ -1,7 +1,7 @@
 package main
 
 import ( 
-	"fmt"
+	//"fmt"
 	"./ascii"
 	"./iso"
 	//"./fileutils"
@@ -18,8 +18,9 @@ func main() {
 
 	ascii.IterateOverASCIIStringLiteral(ascii.Ascii)
 	
-	d := ascii.GreetingASCII()
-	fmt.Println(d)
+	//d := 
+	ascii.GreetingASCII()
+	//fmt.Println(d)
 	
 	var ExtAscii []byte
 	
@@ -31,8 +32,9 @@ func main() {
 	
 	iso.IterateOverExtendedASCIIStringLiteral(ExtAsciiString)
 	
-	a := iso.GreetingExtendedASCII()
-	fmt.Println(a)
+	//a := 
+	iso.GreetingExtendedASCII()
+	//fmt.Println(a)
 	
 	//byteslice := fileutils.FileToByteslice("treasure/treasure.txt")
 	

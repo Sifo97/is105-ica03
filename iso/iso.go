@@ -19,5 +19,6 @@ func GreetingExtendedASCII() string{
 	for i := 0; i < len(Greeting); i++ {
 		fmt.Printf("%c", Greeting[i])
 	}
+	fmt.Println("")
 	return Greeting
 }
