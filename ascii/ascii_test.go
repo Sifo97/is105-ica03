@@ -1,9 +1,9 @@
 package ascii
 
-import {
+import (
 	"testing"
 	"fmt"
-}
+)
 
 func isASCII(s string) bool {
 	for _, c := range s {
