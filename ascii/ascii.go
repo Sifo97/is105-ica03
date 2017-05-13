@@ -34,11 +34,10 @@ func IterateOverASCIIStringLiteral(sl string) {
 // som inneholder kun ASCII tegn (ikke utvidet ASCII).
 // Gjelder oppgave 1b
 
-const Tegn = "\x22\x48\x65\x6C\x6C\x6F\x20\x3A\x2D\x29\x22"
+const Tegn = "\x22\x48\x65\x6C\x6C\x6F\x20\x3A\x2D\x29\x22\xF5" // remove xF5 for sucess test
 //"Hello :-)" i heksadesimale tall
 
 func GreetingASCII() string{
-
 	for i := 0; i < len(Tegn); i++ {
 		fmt.Printf("%c", Tegn[i])
 	}
