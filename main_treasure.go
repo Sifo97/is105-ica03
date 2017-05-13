@@ -11,5 +11,8 @@ func main() {
 	c := fileutils.FileToByteslice(fileToOpen)
 	s := string(c[:len(c)])
 	r := treasure.PrintTreasureUTF8(s)
-	fmt.Println(r)
-}
+	fmt.Print(r)
+	for i := 0; i < len(r); i++ {
+		fmt.Printf("%c", r[i])
+	}
+	}
