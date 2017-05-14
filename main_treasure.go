@@ -8,8 +8,8 @@ const treasureHex = "\x48\x65\x6e\x72\x69\x6b\x20\x41\x72\x6e\x6f\x6c\x64\x20\x5
 func main() {
 	//var fileToOpen = "treasure/treasure.txt"
 	//	c := fileutils.FileToByteslice(fileToOpen)
-	for i := 0; i < len(TreasureHex); i++ {
-		fmt.Printf("%c", TreasureHex[i])
+	for i := 0; i < len(treasureHex); i++ {
+		fmt.Printf("%c", treasureHex[i])
 	}
 	// When we get the byte-array from the file, then convert it to hex
 	// THEN convert it to a string(Yes, we actually tried that). It still returns
