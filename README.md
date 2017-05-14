@@ -1,2 +1,3 @@
-# is105-ica03
-Repository for IS-105 experiments with encoding of signs and symbols.
+IS-105, Gruppe 8, ICA03
+
+Aslak Granåsen, Glenn Haldorsen, Idris Amrandi, Kurt Filip From-Ellingsen, og Sindre Pedersen Fosser.
