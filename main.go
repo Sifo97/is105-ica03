@@ -4,24 +4,21 @@ import (
 	"fmt"
 	"./ascii"
 	"./iso"
-	//"./fileutils"
 	"./unicode"
-	//"strconv"
-	//"encoding/hex"
-	//"strings"
 	"os"
  )
 
 func main() {
 
-	laang := os.Args[1]
+	laang := os.Args[1] //Valg av hvilket språk som skal oversettes til
 	
+	//Oppgave 1a
 	ascii.IterateOverASCIIStringLiteral(ascii.Ascii)
 	
-	//d := 
+	//Oppgave 1b
 	ascii.GreetingASCII()
-	//fmt.Println(d)
 	
+	//Oppgave 2a
 	var ExtAscii []byte
 	
 	for i := 0x80; i <= 0xFF; i++ {
@@ -31,25 +28,12 @@ func main() {
 	var ExtAsciiString string = string(ExtAscii)
 	
 	iso.IterateOverExtendedASCIIStringLiteral(ExtAsciiString)
+	
+	//Oppgave 2b
 	a := iso.GreetingExtendedASCII()
 	fmt.Println(a)
 	
-	//byteslice := fileutils.FileToByteslice("treasure/treasure.txt")
-	
-	//for i := 0, i < len(byteslice); i++ {
-	//	fmt.Println(byteslice[i])
-	//}
-	//fmt.Printf("%s", byteslice)
-	//s := fmt.Sprintf("%s", byteslice)
-	//s = strings.TrimPrefix(s, "\\x")
-	//fmt.Println(s)
-	//fmt.Printf("%c", 120)
-	
-	//dest := make([]byte, len(byteslice))
-	//hex.Decode(dest,(byteslice))
-	//fmt.Println(dest)
-	
-	
+	//Oppgave 4a
 	unicode.Translate(unicode.Norsk, laang)
 	
 }

@@ -12,14 +12,8 @@ func IterateOverExtendedASCIIStringLiteral(sl string) {
 
 // Kode for Oppgave 2b
 const Greeting = "\x22\x53\x61\x6C\x75\x74\x2c\x20\xC3\xA7\x61\x20\x76\x61\x20\xC2\xB0\x2D\x29\x20\xE2\x82\xAC\x35\x30\x22"
-//"\x22\x53\x61\x6c\x75\x74\x2c\x20\xE7\x61\x20\x76\x61\x20\xC2\xB0\x96\x29\x20\xE2\x82\xAC\x35\x30\x22"
 //"Salut, ça va °-) €50" i heksadesimale tall 
 
 func GreetingExtendedASCII() string{
-
-	//for i := 0; i < len(Greeting); i++ {
-		//fmt.Printf("%c", Greeting[i])
-	//}
-	fmt.Println("")
 	return Greeting
 }
