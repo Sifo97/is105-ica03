@@ -12,7 +12,8 @@ const Japansk = "\x22\xe5\x8c\x97\xe3\x81\xa8\xe5\x8d\x97\x22"
 //“北と南” i heksadesimale tall
 
 // Kode for Oppgave 4a
-func Translate(expression string, language string) string {
+func Translate(expression string, language string) {
+	fmt.Println("Selected lang: ", language )
 	if language == "jp" {
 		fmt.Printf("%s\n", expression)
 		fmt.Println("    =")
@@ -23,5 +24,4 @@ func Translate(expression string, language string) string {
 		fmt.Println("       	=")
 		fmt.Printf("%s\n", Islandsk)
 	}
-	return ""
 }

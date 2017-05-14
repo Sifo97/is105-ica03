@@ -9,13 +9,13 @@ import (
 	//"strconv"
 	//"encoding/hex"
 	//"strings"
-	//"os"
+	"os"
  )
 
 func main() {
 
-	//laang := os.Args[1:]
-
+	laang := os.Args[1]
+	
 	ascii.IterateOverASCIIStringLiteral(ascii.Ascii)
 	
 	//d := 
@@ -50,6 +50,6 @@ func main() {
 	//fmt.Println(dest)
 	
 	
-	unicode.Translate(unicode.Norsk, "jp")
+	unicode.Translate(unicode.Norsk, laang)
 	
 }
