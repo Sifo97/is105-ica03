@@ -8,7 +8,6 @@ const PainAndSuffering = "\x48\x65\x6e\x72\x69\x6b\x20\x41\x72\x6e\x6f\x6c\x64\x
 func main() {
 	//var fileToOpen = "treasure/treasure.txt"
 	//	c := fileutils.FileToByteslice(fileToOpen)
-	fmt.Printf("%c", PainAndSuffering)
 	for i := 0; i < len(PainAndSuffering); i++ {
 		fmt.Printf("%c", PainAndSuffering[i])
 	}
