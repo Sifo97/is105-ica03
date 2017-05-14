@@ -17,9 +17,9 @@ const Greeting = "\x22\x53\x61\x6C\x75\x74\x2c\x20\xC3\xA7\x61\x20\x76\x61\x20\x
 
 func GreetingExtendedASCII() string{
 
-	for i := 0; i < len(Greeting); i++ {
-		fmt.Printf("%c", Greeting[i])
-	}
+	//for i := 0; i < len(Greeting); i++ {
+		//fmt.Printf("%c", Greeting[i])
+	//}
 	fmt.Println("")
 	return Greeting
 }
