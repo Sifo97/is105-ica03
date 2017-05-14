@@ -7,6 +7,7 @@
 package main
 import (
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -25,4 +26,7 @@ func foo(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("<font color=\"green\">Hvordan g\u00E5r det, <b>\u16a6</b> ?</font><br/>"))
 	w.Write([]byte("\u16a6 - Thurs<br/>"))
 	w.Write([]byte("\u23f0"))
+	t := time.Now()
+	a := t.String()
+	w.Write([]byte(a))
 }
